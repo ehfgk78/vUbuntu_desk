@@ -22,10 +22,10 @@
    - 확장 패키지 : Oracle VM VirtualBox Extension Pack : `File > 환경설정 > 확장`
    - VBox > File > 환경설정 > Nat + `Host Only 추가`
 5. Creating your first `virtual machine`
-  1) VM name
-  2) Operating System Type : 64-bit guests -> Section 3.1.2.
-  3) memory (RAM) : `host OS가 25~50%를 차지하도록 설정해야함(rule of thumb)`
-  4) `virtual Hard Disk` --> Ch5. Virtual storage --> Create New Virtual Disk Wizard
+ * 1) VM name
+ * 2) Operating System Type : 64-bit guests -> Section 3.1.2.
+ * 3) memory (RAM) : `host OS가 25~50%를 차지하도록 설정해야함(rule of thumb)`
+ * 4) `virtual Hard Disk` --> Ch5. Virtual storage --> Create New Virtual Disk Wizard
      - `dynamically allocated file`  or fixed-size file
      - see Section 5.2. "Disk image files (`VDI`, VMDK, VHD, HDD)"
      - 수정가능: The limit of the image file size can be changed later -> Section 8.23. "VBoxManage modifymedium"
