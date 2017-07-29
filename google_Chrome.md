@@ -1,0 +1,9 @@
+# google Chrome
+
+```
+ $ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb sudo apt-get in
+ 
+ $ sudo apt-get install libxss1 libgconf2-4 libappindicator1 libindicator7
+
+ $ sudo dpkg -i google-chrome-stable_current_amd64.deb
+```

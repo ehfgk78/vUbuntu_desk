@@ -18,8 +18,8 @@
    - 상단 메뉴바 오른쪽 입력기 키보드 표시 `fcitx Icon`:  `Configure Current Input Method`
      * `Keyboard-English(US)`에서 `+`를 눌러 `Hangul`추가 
      * Global Config tab 
-       -> Trigger Input Method -> '한영키'를 눌러 MultiKey설정
-       -> Extrakey for trigger input method : `Disabled`
+       - Trigger Input Method -> '한영키'를 눌러 MultiKey설정
+       - Extrakey for trigger input method : `Disabled`
 
 # Change Keyboard Layout 
 ```
