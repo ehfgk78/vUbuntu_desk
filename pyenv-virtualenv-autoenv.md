@@ -5,15 +5,15 @@
 ---
 
 ### pyenv does ...
-    * Let you **Change the global Python version** on a per-user basis.
-    * Provide support for **per-project Python versions**. 
-    * Allow you to **override the Python version** with an environment variable
-    * Search commands from **multiple versions of Python at a time**.
+* Let you **Change the global Python version** on a per-user basis.
+* Provide support for **per-project Python versions**. 
+* Allow you to **override the Python version** with an environment variable
+* Search commands from **multiple versions of Python at a time**.
 
 ### pyenv does not ... in contrast with pythonbrew and pythonz
-    * **Depend on Python itself**. pyenv was made form pure shell scripts. There is no bootstrap problem of Python
-    * **Need to be loaded into your shell**. Instead, pyenv's shim approach works by adding a directory to your `$PATH`
-    * **Manage virtualenv**. Of course, you can create virtualenv yourself, or pyenv-virtualenv to automate the process
+* **Depend on Python itself**. pyenv was made form pure shell scripts. There is no bootstrap problem of Python
+* **Need to be loaded into your shell**. Instead, pyenv's shim approach works by adding a directory to your `$PATH`
+* **Manage virtualenv**. Of course, you can create virtualenv yourself, or pyenv-virtualenv to automate the process
 
 ### pyenv installer : github way(recommended) : Installation/Update/Uninstallation
 ```
