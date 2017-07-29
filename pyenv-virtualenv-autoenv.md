@@ -53,6 +53,7 @@
 ```
 ---
 ---
+
 # pyenv-virtualenv
   * pyenv-virtualenv is a pyenv plugin that provides features to manage virtualenvs and conda environments for Python on Unix-like systems. 
   * https://github.com/pyenv/pyenv-virtualenv
@@ -73,10 +74,81 @@
 
 ### Usage
 
+1. pyenv
+```
+   $ pyenv install 3.6.1
+   Downloading Python-3.6.1.tar.xz...
+   -> https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz
+   Installing Python-3.6.1...
 
+   $ pyenv versions
+   * system (set by /home/nelp/.pyenv/version)
+     3.6.1
 
+   $ pyenv shell 3.6.1
+   $ python
+   Python 3.6.1 (default, Jun 4 2017, 05:30:18)
+   [GCC 5.4.0 20160609] on linux
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>>
+```
 
+2. pyenv-virtualenv
 
+```
+   $ pyenv virtualenv 3.6.1 test-env
+   $ pyenv versions
+     system
+   * 3.6.1
+     3.6.1/envs/test-env
+     test-env (set by PYENV_VERSION environment variable)
 
+   $ pyenv activate test-env
+
+   (test-env) $ pyenv versions
+     system
+     3.6.1
+     3.6.1/env/test-env
+   * test-env (set by PYENV_VERSION environment variable)
+
+   (test-env) $ python -V
+   Python 3.6.1
+
+   (test-env) $ pyenv deactivate
+
+   $ ls 
+```
+
+3. autoenv
+
+```
+   $ git clone git://github.com/kennethreitz/autoenv.git  ~/.autoenv
+   
+   $ vi ~/.bashrc
+    source ~/.autoenv/activate.sh
+    :wq
+   $ source ~/.bashrc
+```
+   
+```
+   $ mkdir test-dir
+   $ cd test-dir
+   $ touch .env
+   $ echo "pyenv activate test-env" > .env
+```
+
+```
+   $ cd test-dir
+   autoenv:
+   autoenv: WARNING:
+   autoenv: This is the first time you are about to source /home/test-env/.env:
+   autoenv:
+   autoenv:  --- (begin contents) -----------------------------------------
+   autoenv:    pyenv activate test-env$
+   autoenv:  
+   autoenv:  --- (end contents) -------------------------------------------
+   autoenv:
+   autoenv:  Are you sure you want to allow this? (y/N) y
+```
 
 
