@@ -150,5 +150,18 @@
    autoenv:
    autoenv:  Are you sure you want to allow this? (y/N) y
 ```
+--- 
+4. uninstall test-env
+```
+   $ pyenv uninstall test-env
+```
 
+5. etc
+```
+   $ pyenv virtualenvs   # 가상환경 목록보기
 
+   $ pyenv versions      # 설치된 python versions 보기
+
+   $ pyenv install --list  # 설치할 수 있는 python versions list
+
+```
