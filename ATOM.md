@@ -7,9 +7,11 @@
 
 ## install
 ```
- $ sudo dpkg -i atom-amd64.deb
+ $ sudo add-apt-repository ppa:webupd8team/atom
  
- $ sudo apt-get -f install      # Install Atom's dependencies if they are missing
+ $ sudo apt-get update
+ 
+ $ sudo apt-get install atom
 ```
 ---
 
@@ -18,6 +20,7 @@
 1. emmet
 2. Remote-FTP
 3. atom-beautify
+4. autocomplete-python
 4. highlight-line
 5. theme: atom-monokai
 6. glowing-cursor
